@@ -19,6 +19,7 @@ const server = http.createServer((req, res) => {
   if (ext === '.jpg' || ext === '.jpeg') contentType = 'image/jpeg';
   if (ext === '.svg') contentType = 'image/svg+xml';
   if (ext === '.ico') contentType = 'image/x-icon';
+  if (ext === '.pdf') contentType = 'application/pdf';
   
   fs.readFile(filePath, (err, data) => {
     if (err) {
