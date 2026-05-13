@@ -5,7 +5,7 @@ const path = require('path');
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
-  const requestPath = req.url.split('?')[0];
+  const requestPath = decodeURIComponent(req.url.split('?')[0]);
   let filePath = requestPath === '/' ? 'index.html' : requestPath.replace(/^\/+/, '');
   filePath = path.join(__dirname, filePath);
 
