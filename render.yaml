@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-portfolio
+    runtime: node
+    buildCommand: npm install
+    startCommand: npx http-server -p 3000 -c-1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
