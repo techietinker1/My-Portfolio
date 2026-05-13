@@ -529,6 +529,11 @@ footer {
         padding: 1rem;
     }
     
+    .hero-overlay {
+        background: radial-gradient(circle at var(--hero-cursor-x, 50%) var(--hero-cursor-y, 50%), rgba(255,255,255,0.08), transparent 12%),
+                    radial-gradient(circle at calc(var(--hero-cursor-x, 50%) + 15%) calc(var(--hero-cursor-y, 50%) + 20%), rgba(255,255,255,0.06), transparent 10%);
+    }
+    
     .resume-grid,
     .projects-grid,
     .skills-grid,
