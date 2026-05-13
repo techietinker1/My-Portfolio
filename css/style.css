@@ -457,21 +457,29 @@ footer {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
+        align-items: stretch;
+        padding: 0.75rem 1rem;
     }
     
     nav ul {
         margin-top: 1rem;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 0.5rem;
     }
     
     nav ul li {
-        margin-left: 1rem;
-        margin-bottom: 0.5rem;
+        margin-left: 0;
+    }
+    
+    .hero {
+        padding: 120px 1rem 60px;
+        min-height: auto;
     }
     
     .hero-inner {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
         text-align: center;
     }
     
@@ -481,22 +489,80 @@ footer {
     
     .hero-image-card {
         order: 1;
+        padding: 1rem;
     }
     
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+    
+    .hero-description {
+        max-width: 100%;
+    }
+    
+    .profile-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
     
     .contact-card {
         width: 100%;
+        padding: 1rem;
     }
     
-    .resume-grid {
+    .resume-grid,
+    .projects-grid,
+    .skills-grid,
+    .certificate-gallery {
         grid-template-columns: 1fr;
     }
     
     section {
         padding: 40px 1rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .button,
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0.25rem 0;
+    }
+
+    .hero-text h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-subtitle,
+    .hero-description,
+    .contact-card p,
+    .resume-item span,
+    .project-meta,
+    .contact-note {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1rem;
+    }
+
+    footer {
+        padding: 1.5rem 1rem;
     }
 }
 
