@@ -1,5 +1,7 @@
 # Rupam Kumari - Portfolio
 
+Live demo: https://rupam-kumari.onrender.com
+
 A modern, responsive portfolio website showcasing projects, certifications, achievements, and learnings.
 
 ## Features
@@ -21,6 +23,8 @@ A modern, responsive portfolio website showcasing projects, certifications, achi
 
 1. Clone the repository
 2. Open `index.html` in your browser
+
+> If you are viewing on a phone, switch your browser to **Desktop Site** for the best layout.
 
 ## Customization
 
