@@ -196,6 +196,26 @@ nav ul li a:hover {
 .contact-card p {
     margin: 0.45rem 0;
     font-size: 0.95rem;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.project-card p,
+.resume-item span,
+.certificate-card p,
+.achievements-list li,
+.learnings-content p,
+.learnings-content ul li,
+.hero-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .btn {
@@ -203,13 +223,11 @@ nav ul li a:hover {
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
     font-size: 1rem;
-}
-
-.btn:hover {
+    box-shadow: 0 6px 18px rgba(0, 123, 255, 0.18);
     background-color: #0056b3;
 }
 
